@@ -1,9 +1,24 @@
 <script>
     import "../app.css";
-    let welcome = "Welcome!! ";
-</script>
-  
-<h1>{welcome} to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    import * as Card from "$lib/components/ui/card";
 
-<slot />
+    let message = "Welcome";
+
+</script>
+
+<Card.Root>
+<Card.Header>
+  <Card.Title class="text-3xl font-bold underline" >{message} Title</Card.Title>
+  <Card.Description>Card Description</Card.Description>
+</Card.Header>
+<Card.Content>
+  <p>Card Content</p>
+</Card.Content>
+<Card.Footer>
+  <p>Card Footer</p>
+</Card.Footer>
+</Card.Root>
+
+
+
+   

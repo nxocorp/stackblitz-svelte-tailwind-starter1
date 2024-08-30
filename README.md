@@ -7,3 +7,7 @@
 ### Install tailwindcss
 - npm install tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
+
+### Install Shadcn
+- Create file on root: jsconfig.json 
+- npx shadcn-svelte@latest init
